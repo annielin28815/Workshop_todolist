@@ -41,6 +41,16 @@ window.addEventListener('DOMContentLoaded', function(){
     }
   })
 
+    // closeBtn.addEventListener('click', function (event1) {
+  //   event1.target.parentElement.remove();
+  // })
+
+
+  // 點擊任務標記是否完成->點擊 li 新增/移除 checked class
+  list.addEventListener('click', function (event2) {
+    event2.target.classList.toggle('checked');
+  
+
 
 })
 
