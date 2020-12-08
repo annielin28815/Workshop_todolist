@@ -31,6 +31,16 @@ window.addEventListener('DOMContentLoaded', function(){
     document.querySelector('#input').value = ''
   })
 
+   // 新增的任務也有標記/移除功能
+  // 點擊 x 刪除任務->點擊 span (後面那個 x) 可移除任務
+  // event.target - 觸發事情的來源，也就是你點擊到的按鈕圖示
+  list.addEventListener('click', function (event1) {
+    if (event1.target.classList.contains('close')) {
+      let li = event1.target.parentElement
+      li.remove()
+    }
+  })
+
 
 })
 
